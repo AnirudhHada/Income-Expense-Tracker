@@ -14,7 +14,6 @@ function Signup() {
     const navigate = useNavigate();
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(name, value);
         const copySignupInfo = { ...signupInfo };
         copySignupInfo[name] = value;
         setSignupInfo(copySignupInfo);
@@ -48,7 +47,6 @@ function Signup() {
             } else if (!success) {
                 handleError(message);
             }
-            console.log(result);
         } catch (err) {
             handleError(err);
         }
@@ -90,7 +88,7 @@ function Signup() {
                 </div>
                 <button type='submit'>Signup</button>
                 <span>Already have an account ?
-                    <Link to="/login">Login</Link>
+                    <Link to="/login"> Login</Link>
                 </span>
             </form>
             <ToastContainer />

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
-function RefrshHandler({ setIsAuthenticated }) {
+function RefreshHandler({ setIsAuthenticated }) {
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -22,4 +22,4 @@ function RefrshHandler({ setIsAuthenticated }) {
     )
 }
 
-export default RefrshHandler
+export default RefreshHandler

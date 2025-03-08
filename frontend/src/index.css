@@ -1,4 +1,3 @@
-
 *,
 ::before,
 ::after{
@@ -63,10 +62,62 @@ body{
 button{
   background-color: purple;
   border: none;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
   margin: 10px 0;
+  margin-left: 10px;
+}
+
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.amounts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.income-amount {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.expense-amount {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.expense-list {
+  font-family: Arial, sans-serif;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.expense-description {
+  font-weight: bold;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
 }
