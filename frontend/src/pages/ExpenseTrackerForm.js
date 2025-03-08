@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { handleError } from "../utils";
 
 function ExpenseTrackerForm({ addExpenses }) {
@@ -26,7 +25,7 @@ function ExpenseTrackerForm({ addExpenses }) {
 			setExpenseInfo({
 				text: "",
 				amount: "",
-			})
+			});
 		}, 1000);
 		addExpenses(expenseInfo);
 	};
