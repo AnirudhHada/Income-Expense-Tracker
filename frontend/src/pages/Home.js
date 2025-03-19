@@ -64,7 +64,7 @@ function Home() {
 
 	useEffect(() => {
 		fetchExpenses();
-	}, []);
+	});
 
 	const addExpenses = async (data) => {
 		try {
